@@ -15,4 +15,4 @@ RUN npm install nodemon -D
 
 EXPOSE 5000
 
-CMD ["npm","run","start"]
+CMD ["npm","run","dev"]
