@@ -11,6 +11,8 @@ RUN npm install
 
 COPY . .
 
+RUN npm install nodemon -D
+
 EXPOSE 5000
 
-CMD ["npm","run","dev"]
+CMD ["npm","run","start"]
