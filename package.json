@@ -1,10 +1,11 @@
 {
-  "name": "nodeXmongo",
+  "name": "node-mongo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "pm2 start src/index.js --watch --name mongo_node",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,10 @@
   "dependencies": {
     "date-fns": "^2.19.0",
     "express": "^4.17.1",
-    "mongoose": "^5.12.0"
+    "mongoose": "^5.12.0",
+    "pm2": "^4.5.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
